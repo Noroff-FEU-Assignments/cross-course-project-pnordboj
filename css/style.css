@@ -84,3 +84,30 @@ body {
 	border: solid gray;
 	border-radius: 26px;
 }
+
+/* List Game and Signup */
+
+.signup_listgame {
+	display: flex;
+}
+
+.listgame {
+	display: flex;
+	color: #C5D1D9;
+	background-color: #020659;
+	flex-direction: column;
+}
+
+.signup {
+	margin-left: 40%;
+	display: flex;
+	justify-content: center;
+	color: #C5D1D9;
+	background-color: #020659;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.terms_text {
+	font-size: 8px;
+}
