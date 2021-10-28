@@ -44,16 +44,22 @@ body {
 	display: flex;
 	color: white;
 	justify-content: center;
-	font-size: 21px;
 	gap: 26px;
 	background-color: #020659;
 	border: solid 1px #C5D1D9;
-	max-width: 30%;
-	max-height: 20%;
-	margin-left: 35%;
 	border-radius: 35px;
 	margin-bottom: 20px;
 	margin-top: 20px;
+	margin-left: 36%;
+	max-width: fit-content;
+}
+
+.categories > h5 {
+	font-size: 20px;
+	margin: 0 27px 0 27px;
+}
+
+.categories_cat, .categories_best, .categories_new {
 }
 
 /* Games */
@@ -81,7 +87,7 @@ body {
 /* Game Borders */
 
 .game_box {
-	border: solid gray;
+	border: solid #C5D1D9;
 	border-radius: 26px;
 }
 
@@ -89,25 +95,71 @@ body {
 
 .signup_listgame {
 	display: flex;
+	justify-content: center;
 }
 
 .listgame {
 	display: flex;
-	color: #C5D1D9;
 	background-color: #020659;
+	border: solid 3px #C5D1D9;
 	flex-direction: column;
+	margin-right: 2%;
+	width: 300px;
+	height: 222px;
+	line-height: 5px;
+	border-radius: 25px;
+	margin-top: 20px;
+}
+
+button {
+	background-color: #020659;
+	color: #C5D1D9;
+	border: solid 1px gray;
+	border-radius: 15px;
+	margin-top: 20px;
+	width: 150px;
+	margin-left: 15px;
+}
+
+.list_game_text {
+	font-size: 20px;
+}
+
+.list_game_text, .submit {
+	color: #C5D1D9;
+	text-align: center;
+}
+
+.list_text {
+	color: #C5D1D9;
+	padding-left: 10px;
 }
 
 .signup {
-	margin-left: 40%;
 	display: flex;
-	justify-content: center;
-	color: #C5D1D9;
-	background-color: #020659;
 	flex-direction: column;
+	background-color: #020659;
+	border: solid 2px #C5D1D9;
+	border-radius: 25px;
+	color: #C5D1D9;
 	flex-wrap: wrap;
+	line-height: 0.5px;
+	margin-top: 15px;
+	width: 300px;
 }
 
-.terms_text {
-	font-size: 8px;
+.signup_text {
+	padding-left: 10px;
+	padding-top: 15px;
+}
+
+.terms_text, .agree_text {
+	font-size: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+.agree_text {
+	padding-left: 40px;
+	padding-top: 10px;
 }
