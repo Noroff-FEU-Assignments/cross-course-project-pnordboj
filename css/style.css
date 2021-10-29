@@ -50,7 +50,7 @@ body {
 	border-radius: 35px;
 	margin-bottom: 20px;
 	margin-top: 20px;
-	margin-left: 31%;
+	margin-left: 36%;
 	max-width: fit-content;
 }
 
@@ -103,9 +103,9 @@ body {
 	background-color: #020659;
 	border: solid 3px #C5D1D9;
 	flex-direction: column;
-	margin-right: 2%;
-	width: 200px;
-	height: 222px;
+	gap: 5%;
+	width: 300px;
+	height: 300px;
 	line-height: 5px;
 	border-radius: 25px;
 	margin-top: 20px;
@@ -116,7 +116,12 @@ button {
 	color: #C5D1D9;
 	border: solid 1px gray;
 	border-radius: 15px;
-	margin-top: 30px;
+	width: 150px;
+	margin: 30px 0 5% 10px;
+}
+
+.submit {
+	bottom: 10px;
 }
 
 .list_game_text {
