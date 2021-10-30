@@ -119,17 +119,12 @@ body {
 	font-weight: 300;
 }
 
+.listgame > h5 {
+	width: auto;
+}
+
 .price_input {
 	margin-left: 5%;
-	background-color: #020659;
-	border: solid 3px #C5D1D9;
-	flex-direction: column;
-	gap: 5%;
-	width: 300px;
-	height: 300px;
-	line-height: 5px;
-	border-radius: 25px;
-	margin-top: 20px;
 }
 
 button {
@@ -178,8 +173,7 @@ button {
 	flex-wrap: wrap;
 	line-height: 0.5px;
 	margin-top: 20px;
-	margin-top: 15px;
-	width: 300px;
+	width: 350px;
 }
 
 .signup_text {
