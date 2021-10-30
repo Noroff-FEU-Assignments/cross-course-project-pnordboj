@@ -1,3 +1,18 @@
+@import url(//fonts.googleapis.com/css?family=Montserrat);
+
+/* font-family: "Montserrat", "sans-serif"; */
+
+p {
+	font-family: "Montserrat", "sans-serif";
+	font-weight: 400;
+}
+
+h5 {
+	font-family: "Montserrat", "sans-serif";
+	font-weight: 500;
+	font-style: normal;
+}
+
 .logo {
 	display: flex;
 	justify-content: center;
@@ -14,8 +29,8 @@ nav {
 
 .home_icon, .search_icon, .cart_icon, .question_icon {
 	display: flex;
-	width: 5%;
-	height: 5%;
+	width: 60px;
+	height: 60px;
 	background-color: #C5D1D9;
 	border: solid 10px #C5D1D9;
 	border-radius: 25%;
@@ -25,8 +40,8 @@ nav {
 
 .profile_icon {
 	display: flex;
-	width: 4%;
-	height: 3%;
+	width: 55px;
+	height: 50px;
 	background-color: #C5D1D9;
 	border: solid 15px #C5D1D9;
 	border-radius: 25%;
@@ -42,24 +57,16 @@ body {
 
 .categories {
 	display: flex;
-	color: white;
-	justify-content: center;
-	gap: 26px;
+	margin: 15px auto 15px auto;
+	padding: 0 15px 0 15px;
+	gap: 100px;
 	background-color: #020659;
 	border: solid 1px #C5D1D9;
 	border-radius: 35px;
-	margin-bottom: 20px;
-	margin-top: 20px;
-	margin-left: 36%;
-	max-width: fit-content;
-}
-
-.categories > h5 {
+	font-family: "Montserrat", "sans-serif";
+	color: white;
 	font-size: 20px;
-	margin: 0 27px 0 27px;
-}
-
-.categories_cat, .categories_best, .categories_new {
+	width: fit-content;
 }
 
 /* Games */
@@ -100,15 +107,20 @@ body {
 
 .listgame {
 	display: flex;
+	flex-direction: column;
 	background-color: #020659;
 	border: solid 3px #C5D1D9;
-	flex-direction: column;
-	margin-right: 2%;
-	width: 300px;
-	height: 222px;
-	line-height: 5px;
 	border-radius: 25px;
+	margin-right: 2%;
 	margin-top: 20px;
+	line-height: 5px;
+	height: fit-content;
+	font-family: "Montserrat", "sans-serif";
+	font-weight: 300;
+}
+
+.price_input {
+	margin-left: 5%;
 }
 
 button {
@@ -116,13 +128,15 @@ button {
 	color: #C5D1D9;
 	border: solid 1px gray;
 	border-radius: 15px;
-	margin-top: 20px;
+	margin: 10px 0 5px 15px;
 	width: 150px;
-	margin-left: 15px;
+	font-family: "Montserrat", "sans-serif";
+	font-size: 14px;
+	font-weight: 500;
 }
 
 .list_game_text {
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .list_game_text, .submit {
@@ -144,22 +158,30 @@ button {
 	color: #C5D1D9;
 	flex-wrap: wrap;
 	line-height: 0.5px;
-	margin-top: 15px;
-	width: 300px;
+	margin-top: 20px;
 }
 
 .signup_text {
 	padding-left: 10px;
-	padding-top: 15px;
+	padding-top: 5px;
 }
 
-.terms_text, .agree_text {
+.agree_container {
+	display: flex;
+	padding-left: 5px;
+}
+
+.agree_text {
+	font-size: 10px;
+	margin-right: auto;
+}
+
+.terms_text {
 	font-size: 10px;
 	padding-left: 10px;
 	padding-bottom: 10px;
 }
 
-.agree_text {
-	padding-left: 40px;
-	padding-top: 10px;
+.terms_text {
+	text-decoration: underline;
 }

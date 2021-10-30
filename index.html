@@ -4,8 +4,10 @@
   <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gamehub | Homepage</title>
+ 	<title>Gamehub | Homepage</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media_queries.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
   </head>
   
   <header>
@@ -23,37 +25,68 @@
   
   <body>
 	<div class="categories">
-		<h5 class="categories_new">New Releases</h5>
+		<h5 class="categories_new">New Releasesw</h5>
 		<h5 class="categories_best">Best Selling</h5>
 		<h5 class="categories_cat">Categories</h5>
 	</div>
+
 	<div class="games">
-    <div class="game_container_1">
-      <img class="game_box" src="images/Death Stranding.png">
-      <img class="game_box" src="images/God of War.png">
-      <img class="game_box" src="images/Demon Souls.png">
-    </div>
-    <div class="game_container_2">
-      <img class="game_box" src="images/Doom Eternal.png">
-      <img class="game_box" src="images/Rift Apart.png">
-      <img class="game_box" src="images/Stray.png">
-    </div>
+		<div class="game_container_1">
+			<img class="game_box" src="images/Death Stranding.png">
+			<img class="game_box" src="images/God of War.png">
+			<img class="game_box" src="images/Demon Souls.png">
+		</div>
+		<div class="game_container_2">
+			<img class="game_box" src="images/Doom Eternal.png">
+			<img class="game_box" src="images/Rift Apart.png">
+			<img class="game_box" src="images/Stray.png">
+		</div>
 	</div>
 
 	<div class="signup_listgame">
 		<div class="listgame">
+			
 			<h5 class="list_game_text">List Games For Sale</h5>
-			<p class="list_text">Select Game</p>
-			<p class="list_text">Price</p>
+			<p class="list_text">Select Game:</p>
+			
+			<select name="game_select" id="list_select" style="max-width: 70%; margin-left: 5%; border-radius: 25px;">
+				<option>Death Stranding</option>
+				<option>God of War</option>
+				<option>Demon's Souls</option>
+				<option>Doom Eternal</option>
+				<option>Ratchet and Clank: Rift Apart</option>
+				<option>Stray</option>
+			</select>
+			
+			<p class="list_text">Price:</p>
+			<div class="price_input">
+				<input type="number" style="max-width: 40%; border-radius: 20px;" min="0" max="10000" name="price" id="price_input"> 
+				<!--  I've added a style element in HTML here due to it not working in CSS for some reason, i did try to add it to CSS
+				But it didn't accept the ID that i've set for INPUT and SELECT, if you can see why i'd like to know the reason for this so it won't happend again! -->
+				<select name="currency" id="currency_input" style="max-width: 30%; border-radius: 25px;">
+					<option>NOK</option>
+					<option>$</option>
+					<option>€</option>
+				</select>
+			</div>
 			<button><p class="submit">Submit Game</p></button>
+		
 		</div>
 		<div class="signup">
 			<p class="signup_text">Name:</p>
+			<input type="text" id="signup_input" style="max-width: fit-content; margin-left: 3%;">
 			<p class="signup_text">Username:</p>
+			<input type="text" id="signup_input" style="max-width: fit-content; margin-left: 3%;">
 			<p class="signup_text">Password:</p>
+			<input type="text" id="signup_input" style="max-width: fit-content; margin-left: 3%;">
 			<p class="signup_text">E-Mail:</p>
+			<input type="text" id="signup_input" style="max-width: fit-content; margin-left: 3%;">
 			<p class="signup_text">Confirm E-Mail:</p>
-			<p class="agree_text">I Agree to the terms and conditions and the privacy policy</p>
+			<input type="text" id="signup_input" style="max-width: fit-content; margin-left: 3%;">
+			<div class="agree_container">
+				<input type="checkbox">
+				<p class="agree_text">I Agree to the terms and conditions and the privacy policy</p>
+			</div>
 			<p class="terms_text">Click here to read the terms conditions and the privacy policy</p>
 			<button><p class="signup_button">Sign Up</p></button>
 		</div>
