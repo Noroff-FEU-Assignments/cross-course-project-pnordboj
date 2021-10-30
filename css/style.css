@@ -121,6 +121,15 @@ body {
 
 .price_input {
 	margin-left: 5%;
+	background-color: #020659;
+	border: solid 3px #C5D1D9;
+	flex-direction: column;
+	gap: 5%;
+	width: 300px;
+	height: 300px;
+	line-height: 5px;
+	border-radius: 25px;
+	margin-top: 20px;
 }
 
 button {
@@ -137,6 +146,16 @@ button {
 
 .list_game_text {
 	font-size: 18px;
+	width: 150px;
+	margin: 30px 0 5% 10px;
+}
+
+.submit {
+	bottom: 10px;
+}
+
+.list_game_text {
+	font-size: 20px;
 }
 
 .list_game_text, .submit {
@@ -159,6 +178,8 @@ button {
 	flex-wrap: wrap;
 	line-height: 0.5px;
 	margin-top: 20px;
+	margin-top: 15px;
+	width: 300px;
 }
 
 .signup_text {
