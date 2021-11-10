@@ -52,3 +52,17 @@ nav {
 body {
 	background-color: #1D2540;
 }
+
+/* Footer */
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 37%;
+	width: 20%;
+	position: relative;
+	color: white;
+	font-family: "Montserrat", "sans-serif";
+	margin-top: 2%;
+}

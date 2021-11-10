@@ -1,0 +1,119 @@
+@import url(//fonts.googleapis.com/css?family=Montserrat);
+
+/*	font-family: "Montserrat", "sans-serif"; */
+
+p, label, h1, h2, h3, h4, h5 {
+    font-family: "Montserrat", "sans-serif";
+}
+
+/* Checkout Page */
+.h1_text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Montserrat", "sans-serif";
+    color: white;
+}
+
+.h1_text > h1 {
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.h1_text > h2 {
+    font-weight: bold;
+    font-size: 38px;
+}
+
+/* Cart */
+.cart {
+    display: flex;
+    flex-direction: row;
+    background-color: #020659;
+    border: solid 1px #707070;
+    color: white;
+    margin-left: 30%;
+    width: 40%;
+    height: 200px;
+}
+
+.cart > p {
+    width: 19%;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 8%;
+}
+
+.total {
+    flex-direction: column;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 10%;
+    line-height: 2px;
+}
+
+.total > label {
+    font-size: 24px;
+}
+
+.total > h3 {
+    font-size: 38px;
+}
+
+/* Payment Method */
+.payment_method {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.payment_method > h2 {
+    font-size: xx-large;
+}
+
+.select_payment {
+    flex-direction: row;
+}
+
+.select_payment > input {
+    width: 25px;
+    height: 25px;
+}
+
+#mastercard {
+    width: 5%;
+}
+
+#visa {
+    width: 5%;
+    background-color: #707070;
+    border-radius: 25px;
+}
+
+#paypal {
+    width: 6%;
+    background-color: #707070;
+    border-radius: 25px;
+}
+
+/* Complete Purchase */
+
+#complete {
+    display: flex;
+    justify-content: center;
+    background-color: #020659;
+    border: solid 1px #707070;
+    border-radius: 20px;
+    color: white;
+    width: 400px;
+    height: 100px;
+    margin-left: 39%;
+    margin-top: 5%;
+    font-size: 23px;
+    font-family: "Montserrat", "sans-serif";
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
