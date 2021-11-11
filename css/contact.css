@@ -1,0 +1,39 @@
+@import url(//fonts.googleapis.com/css?family=Montserrat);
+
+body {
+    font-family: "Montserrat", "sans-serif";
+}
+
+/*  background-color: #020659;
+    border: solid 1px #C5D1D9;
+    @import url(//fonts.googleapis.com/css?family=Montserrat);
+    font-family: "Montserrat", "sans-serif";
+*/
+
+/* Contact */
+
+.contact_page {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+
+}
+
+.contact_page > h1 {
+    font-size: 40px;
+}
+
+.contact_page > p {
+    font-size: 31px;
+    line-height: 1px;
+    margin-top: 4%;
+}
+
+#select_topic {
+    background-color: #C5D1D9;
+    font-size: 36px;
+    width: 20%;
+    text-align: center;
+    margin-left: 40%;
+}

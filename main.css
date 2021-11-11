@@ -1,11 +1,6 @@
 @import url(//fonts.googleapis.com/css?family=Montserrat);
 
-/* Global Styling */
-
-a:link, a:visited {
-	text-decoration: none;
-	color: white;
-}
+/* Global */
 
 p, label, h1, h2, h3, h4, h5 {
     font-family: "Montserrat", "sans-serif";
@@ -13,53 +8,6 @@ p, label, h1, h2, h3, h4, h5 {
 
 body {
     font-family: "Montserrat", "sans-serif";
-}
-
-.logo {
-	display: flex;
-	justify-content: center;
-}
-
-/* Navigation Bar */
-
-nav {
-	display: flex;
-	justify-content: center;
-	gap: 2%;
-}
-
-/* Navbar Icons */
-
-#home_icon, #search_icon, #cart_icon, #question_icon {
-	display: flex;
-	width: 60px;
-	height: 60px;
-	background-color: #C5D1D9;
-	border: solid 10px #C5D1D9;
-	border-radius: 25%;
-}
-
-#profile_icon {
-	display: flex;
-	width: 55px;
-	height: 50px;
-	background-color: #C5D1D9;
-	border: solid 15px #C5D1D9;
-	border-radius: 25%;
-}	
-
-#profile_icon:hover {
-	width: 50px;
-	height: 45px;
-}
-
-#home_icon:hover, #search_icon:hover, #cart_icon:hover, #question_icon:hover {
-	width: 55px;
-	height: 55px;
-}
-
-body {
-	background-color: #1D2540;
 }
 
 /* Main Page */
@@ -104,7 +52,7 @@ body {
 
 /* Game Borders */
 
-#game_box {
+.game_box {
 	border: solid #C5D1D9;
 	border-radius: 26px;
 }
@@ -116,7 +64,7 @@ body {
 	justify-content: center;
 }
 
-.home_listgame {
+.listgame {
 	display: flex;
 	flex-direction: column;
 	background-color: #020659;
@@ -130,15 +78,15 @@ body {
 	font-weight: 300;
 }
 
-.home_listgame > h5 {
+.listgame > h5 {
 	width: auto;
 }
 
-#price_input {
+.price_input {
 	margin-left: 5%;
 }
 
-#signup_button {
+button {
 	background-color: #020659;
 	color: #C5D1D9;
 	border: solid 1px gray;
@@ -150,21 +98,26 @@ body {
 	font-weight: 500;
 }
 
-#home_list_game_text {
+.list_game_text {
 	font-size: 18px;
+	width: 150px;
 	margin: 30px 0 5% 10px;
 }
 
-#submit {
+.submit {
 	bottom: 10px;
 }
 
-#home_list_game_text, #submit {
+.list_game_text {
+	font-size: 20px;
+}
+
+.list_game_text, .submit {
 	color: #C5D1D9;
 	text-align: center;
 }
 
-#home_list_text {
+.list_text {
 	color: #C5D1D9;
 	padding-left: 10px;
 }
@@ -182,7 +135,7 @@ body {
 	width: 350px;
 }
 
-#signup_text {
+.signup_text {
 	padding-left: 10px;
 	padding-top: 5px;
 }
@@ -192,15 +145,18 @@ body {
 	padding-left: 5px;
 }
 
-#agree_text {
+.agree_text {
 	font-size: 10px;
 	margin-right: auto;
 }
 
-#terms_text {
+.terms_text {
 	font-size: 10px;
 	padding-left: 10px;
 	padding-bottom: 10px;
+}
+
+.terms_text {
 	text-decoration: underline;
 }
 
@@ -209,6 +165,21 @@ body {
 .list_page {
     display: flex;
     justify-content: center;
+}
+
+h4 {
+	font-family: "Montserrat", "sans-serif";
+	font-weight: 500;
+	font-style: normal;
+}
+
+a:link, a:visited {
+    display: flex;
+    font-family: "Montserrat", "sans-serif";
+    font-weight: 500;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
 }
 
 /* Games */
@@ -221,7 +192,7 @@ body {
     justify-content: center;
 }
 
-.game_list_1 {
+.game_list_1{
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -257,7 +228,7 @@ body {
     border-radius: 25px;
 }
 
-#game_box_list {
+#game_box {
 	border: solid #C5D1D9;
 	border-radius: 26px;
     height: 80%;
@@ -317,10 +288,11 @@ body {
 
 label {
     display: flex;
+    font-family: "Montserrat", "sans-serif";
 }
 
 .action, .adventure, .puzzle, .sim, .horror, .rpg {
-	display: flex;
+    display: flex;
     flex-direction: row;
     gap: 10px;
     margin-top: 10px;
@@ -343,17 +315,26 @@ label {
 .game_page {
     display: flex;
     flex-direction: column;
-	align-items: center;
+    text-align: center;
     color: white;
 }
 
 .game_page > img {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35%;
+    margin-top: 10px;
     width: 30%;
 }
 
 .game_page > h1 {
     font-size: 42px;
     font-weight: bolder;
+}
+
+#pre_order_text {
+    display: flex;
+    justify-content: center;
 }
 
 /* PreOrder - Wishlist Button */
@@ -413,7 +394,7 @@ label {
     font-style: normal;
 }
 
-.tags_description {
+.tags {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -437,7 +418,7 @@ label {
     color: lightgray;
 }
 
-/* Edit Page */
+/* Edit Profile */
 
 /* Profile Navigation */
 .profile_nav {
@@ -503,7 +484,7 @@ label {
     flex-direction: column;
     gap: 2%;
     color: white;
-	margin-left: 37%;
+    margin: 20px auto;
     width: 600px;
 }
 
@@ -745,17 +726,4 @@ label {
     flex-direction: row;
     justify-content: center;
     background-color: lightgrey;
-}
-
-/* Footer */
-
-footer {
-	display: flex;
-	flex-direction: column;
-	margin: 3% auto;
-	align-items: center;
-	width: 20%;
-	position: relative;
-	color: white;
-	font-family: "Montserrat", "sans-serif";
 }

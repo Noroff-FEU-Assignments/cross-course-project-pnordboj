@@ -99,21 +99,24 @@ p, label, h1, h2, h3, h4, h5 {
 
 /* Complete Purchase */
 
-#complete {
+.complete {
     display: flex;
-    justify-content: center;
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 2%;
+}
+
+#complete {
+    font-size: 43px;
+    font-family: "Montserrat", "sans-serif";
     background-color: #020659;
     border: solid 1px #707070;
     border-radius: 20px;
+    height: 90px;
     color: white;
-    width: 400px;
-    height: 100px;
-    margin-left: 39%;
-    margin-top: 5%;
-    font-size: 23px;
-    font-family: "Montserrat", "sans-serif";
 }
 
-a:link, a:visited {
-    text-decoration: none;
+#complete:hover {
+    background-color: #707070;
+    border-radius: 20px;
 }

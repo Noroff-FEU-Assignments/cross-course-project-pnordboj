@@ -42,7 +42,7 @@ a:link, a:visited {
     gap: 15px;
 }
 
-#view_game {
+#view_game, #view_game_works {
     background-color: #020659;
     border: solid 1px #707070;
     color: white;
@@ -54,6 +54,16 @@ a:link, a:visited {
 #view_game > h4 {
     font-weight: 300;
     font-size: 14px;
+}
+
+#view_game_works > h4 {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+#view_game_works:hover {
+    background-color: #707070;
+    border-radius: 25px;
 }
 
 #game_box {

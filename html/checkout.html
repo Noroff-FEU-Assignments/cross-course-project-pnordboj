@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="../css/checkout.css">
     <link rel="stylesheet" href="../css/media_queries.css">
     <title>Checkout Page | Gamehub</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="../images/GameHub_Logo.png">
+            <a href="../index.html">
+				<img src="../images/GameHub_Logo.png">
+			</a>
         </div>
         <nav>
 			<a href="../index.html">
@@ -50,16 +51,20 @@
 	  <selection class="payment_method">
 		<h2>Select your payment method</h2>
 		<div class="select_payment">
-			<input id="checkbox" type="checkbox">
+			<input id="checkbox" type="radio">
 			<img id="mastercard" src="../images/2560px-MasterCard_Logo.svg.png">
-			<input id="checkbox" type="checkbox">
+			<input id="checkbox" type="radio">
 			<img id="visa" src="../images/Visa-Logo.png">
-			<input id="checkbox" type="checkbox">
+			<input id="checkbox" type="radio">
 			<img id="paypal" src="../images/paypal.png">
 		</div>
 	  </selection>
 	  <div class="complete">
-		<a href="success.html"><button id="complete"><h2>Complete Purchase</h2></button></a>
+		<a href="success.html">
+			<button id="complete">
+				Complete Purchase
+			</button>
+		</a>
 	  </div>
 
 	  <footer>

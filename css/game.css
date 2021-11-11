@@ -60,6 +60,11 @@ p, label {
     font-size: 22px;
 }
 
+#preorder_button:hover {
+    background-color: #707070;
+    border-radius: 25px;
+}
+
 #add_wishlist {
     height: 70px;
     width: 200px;
