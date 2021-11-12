@@ -1,0 +1,119 @@
+@import url(//fonts.googleapis.com/css?family=Montserrat);
+
+h1 {
+    font-family: "Montserrat", "sans-serif";
+    font-weight: 500;
+    font-style: normal;
+}
+
+p, label {
+    font-family: "Montserrat", "sans-serif";
+    font-style: normal;
+}
+
+/* Game Page */
+.game_page {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.game_page > img {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35%;
+    margin-top: 10px;
+    width: 30%;
+}
+
+.game_page > h1 {
+    font-size: 42px;
+    font-weight: bolder;
+}
+
+#pre_order_text {
+    display: flex;
+    justify-content: center;
+}
+
+/* PreOrder - Wishlist Button */
+
+.pre_order_wishlist {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#preorder_button {
+    height: 70px;
+    width: 200px;
+    border-radius: 25px;
+    border: solid 1px #707070;
+    background-color: #020659;
+    color: white;
+    font-family: "Montserrat", "sans-serif";
+    font-style: normal;
+    font-size: 22px;
+}
+
+#preorder_button:hover {
+    background-color: #707070;
+    border-radius: 25px;
+}
+
+#add_wishlist {
+    height: 70px;
+    width: 200px;
+    background-color: #020659;
+    border: solid 1px #707070;
+    color: white;
+    border-radius: 25px;
+    font-family: "Montserrat", "sans-serif";
+    font-style: normal;
+    font-size: 22px;
+}
+
+/* Description */
+
+.description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+#story {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: "Montserrat", "sans-serif";
+    font-style: normal;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20%;
+    background-color: #020659;
+    color: white;
+    border: solid 1px #707070;
+    border-radius: 15px;
+    width: 25%;
+    margin-left: 37%;
+    margin-top: 1%;
+    font-family: "Montserrat", "sans-serif";
+}
+
+#tags_text_1 {
+    font-weight: 600;
+}
+
+#tags_text_2 {
+    font-weight: 400;
+    color: lightgray;
+}

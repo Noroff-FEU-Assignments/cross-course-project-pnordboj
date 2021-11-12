@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<title>Gamehub | Homepage</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media_queries.css">
+  </head>
+  
+  <body>
+
+	<header>
+		<div class="logo">
+			<a href="index.html">
+			<img src="images/GameHub_Logo.png">
+			</a>
+		</div>
+		<nav>
+			<a href="index.html">
+				<img id="home_icon" src="images/icons/home.png">
+			</a>
+			<a href="/html/list.html">
+				<img id="search_icon" src="images/icons/search.png">
+			</a>
+			<a href="/html/checkout.html">
+				<img id="cart_icon" src="images/icons/cart.png">
+			</a>
+			<a href="/html/edit.html">
+				<img id="profile_icon" src="images/icons/profile.png">
+			</a>
+			<a href="/html/contact.html">
+				<img id="question_icon" src="images/icons/iconfinder_question-mark_6351915.png">
+			</a>
+		</nav>
+	  </header>
+
+	<section class="categories">
+		<h5 class="categories_new">New Releases</h5>
+		<h5 class="categories_best">Best Selling</h5>
+		<h5 class="categories_cat">Categories</h5>
+	</section>
+
+	<section class="games">
+		<div class="game_container_1">
+			<img id="game_box" src="images/Death Stranding.png">
+			<img id="game_box" src="images/God of War.png">
+			<img id="game_box" src="images/Demon Souls.png">
+		</div>
+		<div class="game_container_2">
+			<img id="game_box" src="images/Doom Eternal.png">
+			<img id="game_box" src="images/Rift Apart.png">
+			<a href="html/game.html"><img id="game_box" src="images/Stray.png"></a>
+		</div>
+	</section>
+
+	<section class="signup_listgame">
+		<div class="home_listgame">
+			<h5 id="home_list_game_text">List Game for Sale</h5>
+			<p id="home_list_text">Select Game:</p>
+			<select name="game_select" id="list_select" style="max-width: 70%; margin-left: 5%; border-radius: 25px;">
+				<option>Death Stranding</option>
+				<option>God of War</option>
+				<option>Demon's Souls</option>
+				<option>Doom Eternal</option>
+				<option>Ratchet and Clank: Rift Apart</option>
+				<option>Stray</option>
+			</select>
+			<p id="home_list_text">Price:</p>
+			<div class="price_input">
+				<input type="number" style="max-width: 40%; border-radius: 20px;" min="0" max="10000" name="price" id="price_input"> 
+				<select name="currency" id="currency_input" style="max-width: 30%; border-radius: 25px;">
+					<option>NOK</option>
+					<option>$</option>
+					<option>€</option>
+				</select>
+			</div>
+			<button id="signup_button"><p id="submit">Submit Game</p></button>
+		</div>
+		<div class="signup">
+			<p id="signup_text">Name:</p>
+			<input type="text" id="signup_input" style="max-width: fit-content; margin-left: 3%;">
+			<p id="signup_text">Username:</p>
+			<input type="text" id="signup_input" style="max-width: fit-content; margin-left: 3%;">
+			<p id="signup_text">Password:</p>
+			<input type="text" id="signup_input" style="max-width: fit-content; margin-left: 3%;">
+			<p id="signup_text">E-Mail:</p>
+			<input type="text" id="signup_input" style="max-width: fit-content; margin-left: 3%;">
+			<p id="signup_text">Confirm E-Mail:</p>
+			<input type="text" id="signup_input" style="max-width: fit-content; margin-left: 3%;">
+			<div class="agree_container">
+				<input type="checkbox">
+				<p id="agree_text">I Agree to the terms and conditions and the privacy policy</p>
+			</div>
+			<p id="terms_text">Click here to read the terms conditions and the privacy policy</p>
+			<button id="signup_button"><p id="signup_text">Sign Up</p></button>
+		</div>
+	</section>
+	<footer>
+		<img id="universe_img" src="images/universe.png">
+		<p id="copyright">&copy; Gamehub 2021</p>
+	</footer>
+  </body>
+  
+</html>

@@ -1,0 +1,96 @@
+/* For Mobile Phones, example: All iPhones according too Firefox Developer Edition */
+
+@media only screen and (max-width: 428px) and (max-height: 926px) {
+    
+    nav {
+        justify-content: center;
+        margin-left: 15px;
+    }
+    
+    .home_icon, .search_icon, .cart_icon, .question_icon {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profile_icon {
+        width: 35px;
+        height: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }	
+
+    .categories {
+        justify-content: center;
+        margin: 10px 0 10px 5px;
+        padding: 0 15px 0 10px;
+        border-radius: 0px;
+        gap: 10px;
+        width: auto;
+    }
+
+    .games {
+        flex-wrap: wrap;
+        max-width: 400px;
+        margin-left: auto;
+        gap: 26px;
+    }
+
+    .game_container_1, .game_container_2 {
+        flex-direction: column;
+    }
+
+    .signup_listgame {
+        flex-direction: column;
+    }
+
+    .listgame {
+        width: 375px;
+    }
+
+    .signup {
+        width: 375px;
+    }
+
+}
+
+@media only screen and (max-width: 427px) and (max-height: 925px) {
+    
+    .listgame {
+        width: auto;
+    }
+
+    .signup {
+        width: auto;
+    }
+
+}
+
+/* For Desktop */
+
+@media only screen and (min-width: 1930px) and (min-height: 1090px) {
+    
+    nav {
+        max-width: fit-content;
+        margin-left: 42%;
+        gap: 20px;
+    }
+    
+    .home_icon, .search_icon, .cart_icon, .question_icon {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profile_icon {
+        width: 45px;
+        height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }	
+
+}

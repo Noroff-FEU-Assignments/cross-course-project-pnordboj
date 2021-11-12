@@ -1,0 +1,40 @@
+@import url(//fonts.googleapis.com/css?family=Montserrat);
+
+p, h1, h2, h3 {
+    font-family: "Montserrat", "sans-serif";
+}
+
+/* Page */
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.page > h1 {
+    color: white;
+    font-size: 48px;
+}
+
+.page > img {
+    margin-left: 40%;
+    width: 20%;
+}
+
+.page > h3, img {
+    line-height: 1px;    
+}
+
+.page > h3 {
+    color: gray;
+    font-size: 26px;
+}
+
+.launcher {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: lightgrey;
+}
