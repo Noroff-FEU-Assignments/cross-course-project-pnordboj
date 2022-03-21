@@ -479,7 +479,7 @@ label {
     margin: 0;
 }
 
-#save_changes {
+#change {
     background-color: #020659;
     border: solid 1px #C5D1D9;
     border-radius: 25px;
@@ -489,7 +489,7 @@ label {
     font-size: 24px;
 }
 
-#save_changes:hover {
+#change:hover {
     background-color: #C5D1D9;
     border-radius: 25px;
     color: #020659;
@@ -500,71 +500,28 @@ label {
 
 .profile_settings {
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 2%;
     color: white;
+    margin-top: 2%;
 	margin-left: 37%;
     width: 600px;
 }
 
-.full_name {
-    display: flex;
-    font-size: 28px;
-    gap: 20%;
-    margin-top: 20px;
-}
-
-.full_name > input {
-    width: 200px;
-    height: 20px;
-}
-
-.e_mail {
-    display: flex;
-    font-size: 28px;
-    margin-top: 10px;
-    gap: 30%;
-}
-
-.e_mail > input {
-    width: 200px;
-    height: 20px;
-}
-
-.username {
-    display: flex;
-    margin-top: 10px;
-    font-size: 28px;
-    gap: 20%;
-}
-
-.username > input {
-    width: 200px;
-    height: 20px;
-}
-
-.password {
-    display: flex;
-    margin-top: 10px;
-    font-size: 28px;
-    gap: 22%;
-}
-
-.password > input {
-    width: 200px;
-    height: 20px;
-}
-
-.new_password {
-    display: flex;
+.form {
     margin-top: 10px;
     font-size: 28px;
     gap: 10%;
 }
 
-.new_password > input {
+.form > input {
     height: 20px;
     width: 200px;
+}
+
+.form-error {
+    color: red;
 }
 
 /* Checkout */
