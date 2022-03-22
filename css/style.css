@@ -215,22 +215,39 @@ body {
 
 .game_list {
     display: flex;
-    gap: 5%;
-    margin-right: 5%;
-    padding-top: 30px;
+    flex-direction: column;
     justify-content: center;
+    margin: auto;
+    align-items: center;
+    gap: 5%;
 }
 
-.game_list_1 {
+.gameListButton {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    gap: 2%;
+
 }
 
-.game_list_2 {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+#viewTop {
+    background-color: #020659;
+    border: solid 1px #707070;
+    color: white;
+}
+
+#viewMonthly {
+    background-color: #020659;
+    border: solid 1px #707070;
+    color: white;
+}
+
+#viewUpcoming {
+    background-color: #020659;
+    border: solid 1px #707070;
+    color: white;
 }
 
 #view_game, #view_game_works {
@@ -239,7 +256,7 @@ body {
     color: white;
     border-radius: 25px;
     height: 80%;
-    width: 80%;
+    width: 100%;
 }
 
 #view_game > h4 {
@@ -266,12 +283,19 @@ body {
 
 /* Search Box */
 
+.search_tags {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin-left: 70%;
+    margin-top: 2%;
+}
+
 .search {
     display: flex;
     flex-direction: row;
-    justify-content: left;
     background-color: #020659;
-    width: 250px;
+    width: 105%;
     border: solid 1px #707070;
     border-radius: 15px;
     color: white;
@@ -281,7 +305,7 @@ body {
 #search_button {
     border-radius: 25px;
     margin: 10px 10px 0 auto;
-    height: 30px;
+    height: 25px;
     width: auto;
 }
 
@@ -296,6 +320,52 @@ body {
     width: 130px;
     margin: 10px 0 10px 15px;
     border-radius: 25px;
+}
+
+#whiteline {
+    opacity: 40%;
+    width: 100%;
+}
+
+/* Api */
+
+.game-api {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 30%;
+    margin-top: 3%;
+}
+
+.ratingRelease {
+    display: flex;
+}
+
+#apiRating {
+    background-color: #020659;
+    border: solid 1px #707070;
+    color: white;
+    text-align: center;
+}
+
+#apiReleaseTop {
+    background-color: #020659;
+    border: solid 1px #707070;
+    color: white;
+    text-align: center;
+}
+
+a#imageLink {
+    width: 50%;
+    margin: auto;
+}
+
+#imageLink > img {
+	border: solid #C5D1D9;
+	border-radius: 26px;
+    width: 100%;
 }
 
 /* Tags */
@@ -521,6 +591,7 @@ label {
 }
 
 .form-error {
+    display: none;
     color: red;
 }
 
