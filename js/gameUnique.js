@@ -3,8 +3,8 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
 const html = document.querySelector(".apiContainer");
-const url = 'https://api.rawg.io/api/games?ordering=-metacritic&key=fc28d25bb9a8458487040dc95d300dff' + '/' + id;
-const gamesMonth = "https://api.rawg.io/api/games?ordering=-metacritic&dates=2022-02-01,2022-03-22&key=fc28d25bb9a8458487040dc95d300dff" + '/' + id;
+const url = 'https://api.rawg.io/api/games?ordering=-metacritic' + '/' + id + '&key=fc28d25bb9a8458487040dc95d300dff';
+const gamesMonth = 'https://api.rawg.io/api/games?ordering=-metacritic&dates=2022-02-01,2022-03-22' + '/' + id + '&key=fc28d25bb9a8458487040dc95d300dff';
 
 async function apiGame() {
     try {
