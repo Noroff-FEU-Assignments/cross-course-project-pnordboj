@@ -26,3 +26,4 @@ async function apiGame() {
         html.innerHTML = displayError(), "ERROR HAS OCCURED!";
     }
 }
+apiGame();
