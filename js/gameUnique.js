@@ -9,7 +9,7 @@ const gamesMonth = 'https://api.rawg.io/api/games?ordering=-metacritic&dates=202
 async function apiGame() {
         const fetchApi = await fetch(url);
         const callApi = await fetchApi.json();
-        const games = callApi.results;
+        const games = callApi;
         console.log(games);
         html.innerHTML = '';
         console.log(games);
