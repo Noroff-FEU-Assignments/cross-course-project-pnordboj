@@ -21,7 +21,7 @@ async function getTopGames() {
                     <a href="../html/api.html?id=${games[i].id}">
                     <h2 id="apiTitle">${games[i].name}</h2>
                     </a>
-                    <a href="../html/api.html?id=${games[i].id}" id="imageLink">
+                    <a href="../html/api.html?${games[i].id}" id="imageLink">
                         <img id="apiImage" alt="${games[i].name}(Missing Image)" src="${games[i].background_image}">
                     </a>
                         <label id="apiRating">Metacritic Score: ${games[i].metacritic}</label>
