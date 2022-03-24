@@ -11,7 +11,7 @@ async function apiGame() {
         const fetchApi = await fetch(url);
         const callApi = await fetchApi.json();
         const games = callApi.results;
-        document.title = `${games.name}`;
+        console.log(games);
         html.innerHTML = '';
         console.log(games);
         html.innerHTML += `
