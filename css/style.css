@@ -415,16 +415,16 @@ label {
 }
 
 #apiImage {
-    width: 20%;
+    width: 40%;
     height: auto;
     border: #707070 solid 5px;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 #apiDescription {
     width: 70%;
     text-align: center;
-    font-size: 10px;
+    font-size: 16px;
 }
 
 .purchaseButton {
@@ -443,7 +443,7 @@ label {
     color: white;
 }
 
-#apiPurchase:hover {
+.purchaseButton:hover {
     background-color: #707070;
 }
 
