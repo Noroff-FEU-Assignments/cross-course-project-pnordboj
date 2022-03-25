@@ -224,7 +224,7 @@ body {
 
 .allGames {
     display: flex;
-    align-items: center;
+    justify-content: center;
     margin: auto;
     background-color: #C5D1D9;
     border: solid 3px #020659;
