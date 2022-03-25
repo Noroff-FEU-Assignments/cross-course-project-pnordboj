@@ -414,17 +414,15 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
     width: 50%;
+    background-color: #020659;
+    border: solid 2px #707070;
+    border-radius: 20%;
+    color: white;
 }
 
-#apiComplete {
-        background-color: #020659;
-        border: solid 2px #707070;
-        border-radius: 20%;
-        color: white;
-}
-
-#apiComplete:hover {
+.addContainer:hover {
     background-color: #707070;
     border-radius: 20px;
 }
