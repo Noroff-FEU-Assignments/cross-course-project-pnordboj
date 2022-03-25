@@ -12,7 +12,7 @@ async function apiGame() {
                 const games = await fetchApi.json();
                 html.innerHTML = '';
                 document.title = `${games.name}`;
-                document.querySelector('meta')["description"].content = `${games.description}`;
+                document.querySelector('meta')["description"].setAttribute = `${games.description}`;
                 html.innerHTML += `
                 <div class="uniqueGame">
                 <h2>${games.name}</h2>
