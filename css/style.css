@@ -223,10 +223,14 @@ body {
 }
 
 .allGames {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #C5D1D9;
-    border: solid 1px #707070;
+    border: solid 3px;
+    border-radius: 25%
     color: gray;
-    width: 30%;
+    width: 20%;
     margin-top: 4%;
 }
 
