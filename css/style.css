@@ -411,12 +411,10 @@ label {
 }
 
 #apiComplete {
-        font-size: 43px;
-        font-family: "Montserrat", "sans-serif";
         background-color: #020659;
-        border: solid 1px #707070;
-        border-radius: 20px;
-        height: 90px;
+        border: solid 2px #707070;
+        border-radius: 20%;
+        width: 50%;
         color: white;
 }
 
