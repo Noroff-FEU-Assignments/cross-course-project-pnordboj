@@ -226,10 +226,8 @@ body {
     display: flex;
     text-align: center;
     margin: auto;
-    background-color: #C5D1D9;
-    border: solid 3px #020659;
-    border-radius: 25px;
-    width: 10%;
+    color: #C5D1D9;
+    font-size: 1.5em;
     margin-top: 4%;
 }
 
