@@ -19,12 +19,6 @@ async function apiGame() {
                 <h2>${games.name}</h2>
                 <img src="${games.background_image}" id="apiImage" alt="${games.name}(Image Missing)">
                 </div>`;
-                addCart.innerHTML += `
-                <a class="purchaseButton" href="checkout.html?id=${games.id}">
-                <button id="apiPurchase">
-                Purchase ${games.name}
-                </button>
-                </a>`;
                 const gameGenre = games.genres;
                 for(let i = 0; i < gameGenre.length; i++) {
                         html.innerHTML += `
@@ -36,6 +30,12 @@ async function apiGame() {
                 <p id="apiDescription">${games.description_raw}</p>
                 <p id="apiRelease">Released: ${games.released}</p>
                 </div>`;
+                addCart.innerHTML += `
+                <a class="purchaseButton" href="checkout.html?id=${games.id}">
+                <button id="apiPurchase">
+                Purchase ${games.name}
+                </button>
+                </a>`;
         } catch(error) {
                 console.log(error);
                 html.innerHTML = displayError(error, 'An error has occured!');
