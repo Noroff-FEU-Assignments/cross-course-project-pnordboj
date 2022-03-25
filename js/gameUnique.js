@@ -17,8 +17,8 @@ async function apiGame() {
                 <div class="uniqueGame">
                 <h2>${games.name}</h2>
                 <img src="${games.background_image}" id="apiImage" alt="${games.name}(Image Missing)">
-                <p id="apiDescription">Released: ${games.description}</p>
-                <p id="apiRelease">${games.released}</p>
+                <p id="apiDescription">${games.description}</p>
+                <p id="apiRelease">Released: ${games.released}</p>
                 </div>`;
                 addCart.innerHTML += `
                 <div class="addContainer">
