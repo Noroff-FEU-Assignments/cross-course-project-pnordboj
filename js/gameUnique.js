@@ -12,8 +12,8 @@ async function apiGame() {
                 const games = await fetchApi.json();
                 console.log(games);
                 html.innerHTML = '';
-                // document.title = `${games.name}`;
-                // document.getElementsByTagName('meta')["description"].content = `${games.description}`;
+                document.title = `${games.name} | Gamehub`;
+                document.getElementsByTagName('meta')["description"].content = `${games.description}`;
                 html.innerHTML += `
                 <div class="uniqueGame">
                 <h2>${games.name}</h2>
