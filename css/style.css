@@ -424,12 +424,11 @@ label {
 
 .addContainer:hover {
     background-color: #707070;
-    border-radius: 20px;
 }
 
 #apiRelease {
     border: #707070 solid 3px;
-    border-radius: 50%;
+    border-radius: 20%;
     background-color: #020659;
     font-size: 1.3em;
 }
