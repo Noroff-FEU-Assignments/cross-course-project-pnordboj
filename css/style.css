@@ -226,6 +226,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
     background-color: #C5D1D9;
     border: solid 3px #020659;
     border-radius: 25%
