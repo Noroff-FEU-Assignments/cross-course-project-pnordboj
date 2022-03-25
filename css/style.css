@@ -399,8 +399,30 @@ label {
     color: #C5D1D9;
 }
 
+#apiImage {
+    width: 50%;
+    height: auto;
+    border: #707070 solid 5px;
+    border-radius: 25%;
+}
+
 #apiDescription {
     width: 50%;
+}
+
+#apiComplete {
+        font-size: 43px;
+        font-family: "Montserrat", "sans-serif";
+        background-color: #020659;
+        border: solid 1px #707070;
+        border-radius: 20px;
+        height: 90px;
+        color: white;
+}
+
+#apiComplete:hover {
+    background-color: #707070;
+    border-radius: 20px;
 }
 
 #apiRelease {
