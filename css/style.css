@@ -433,15 +433,12 @@ label {
     justify-content: center;
     align-items: center;
     margin: auto;
-    background-color: #020659;
-    border: solid 1px #707070;
-    border-radius: 10%;
-    width: 30%;
 }
 
 #apiPurchase {
-    border: none;
-    color: white;
+    background-color: #020659;
+    border: solid 1px #707070;
+    width: 30%;
     font-size: 1.5em;
 }
 
