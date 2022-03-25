@@ -401,6 +401,7 @@ label {
 
 .uniqueGameGenre {
     display: flex;
+    justify-content: center;
     margin: auto;
     margin-top: 3%;
     gap: 1%;
@@ -439,10 +440,11 @@ label {
     background-color: #020659;
     border: solid 1px #707070;
     width: 30%;
+    color: #C5D1D9;
     font-size: 1.5em;
 }
 
-.purchaseButton:hover {
+#apiPurchase:hover {
     background-color: #707070;
 }
 
