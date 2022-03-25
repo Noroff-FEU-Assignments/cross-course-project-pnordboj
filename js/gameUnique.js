@@ -12,11 +12,14 @@ async function apiGame() {
         const games = callApi.results;
         console.log(games);
         html.innerHTML = '';
-        console.log(games);
-        html.innerHTML += `
-        <div class="uniqueGame">
-        <h2>${games.name}</h2>
-        </div>
-        `
+        for(let i = 0; i < games.length; i++) {
+                document.title = `${games.name}`;
+                console.log(games);
+                html.innerHTML += `
+                <div class="uniqueGame">
+                <h2>${games.name}</h2>
+                </div>
+                `
+        }
 }
 apiGame();
