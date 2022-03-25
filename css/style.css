@@ -411,6 +411,7 @@ label {
     border: #707070 solid 2px;
     color: #C5D1D9;
     width: 10%;
+    flex-wrap: nowrap;
 }
 
 #apiImage {
