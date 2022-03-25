@@ -417,7 +417,7 @@ label {
     margin: auto;
     width: 50%;
     background-color: #020659;
-    border: solid 2px #707070;
+    border: solid 1px #707070;
     border-radius: 20%;
     color: white;
 }
@@ -427,9 +427,6 @@ label {
 }
 
 #apiRelease {
-    border: #707070 solid 3px;
-    border-radius: 20%;
-    background-color: #020659;
     font-size: 1.3em;
 }
 
