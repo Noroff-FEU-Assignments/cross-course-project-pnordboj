@@ -402,9 +402,9 @@ label {
 .uniqueGameGenre {
     display: flex;
     justify-content: center;
+    justify-content: space-around;
     margin: auto;
-    margin-top: 3%;
-    gap: 1%;
+    margin-top: 2%;
     flex-direction: row;
 }
 
@@ -412,7 +412,7 @@ label {
     background-color: #020659;
     border: #707070 solid 2px;
     color: #C5D1D9;
-    width: 10%;
+    width: 8%;
     text-align: center;
 }
 
