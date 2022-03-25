@@ -12,22 +12,30 @@ async function apiGame() {
                 const games = await fetchApi.json();
                 console.log(games);
                 html.innerHTML = '';
-                document.title = `${games.name}`;
-                document.getElementsByTagName('meta')["description"].content = `${games.description}`;
+                // document.title = `${games.name}`;
+                // document.getElementsByTagName('meta')["description"].content = `${games.description}`;
                 html.innerHTML += `
                 <div class="uniqueGame">
                 <h2>${games.name}</h2>
                 <img src="${games.background_image}" id="apiImage" alt="${games.name}(Image Missing)">
-                <p id="apiDescription">${games.description}</p>
+                </div>`;
+                const gameGenre = games.genres;
+                for(let i = 0; i < gameGenre.length; i++) {
+                        html.innerHTML += `<div class="uniqueGame">
+                        <label id="genreApi">${gameGenre.name}</label>
+                        </div>`;       
+                }
+                html.innerHTML += `<div class="uniqueGame">
+                <p id="apiDescription">${games.description_raw}</p>
                 <p id="apiRelease">Released: ${games.released}</p>
                 </div>`;
                 addCart.innerHTML += `
                 <div class="addContainer">
-                <a id="buttonRef" href="checkout.html?id=${games.id}">
-                        <button id="complete">
-                                Purchase ${games.name}
-                        </button>
-                </a>
+                        <a id="buttonRef" href="checkout.html?id=${games.id}">
+                                <button id="apiPurchase">
+                                        Purchase ${games.name}
+                                </button>
+                        </a>
                 </div>
                 `;
         } catch(error) {
