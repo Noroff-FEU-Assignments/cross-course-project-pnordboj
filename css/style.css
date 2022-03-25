@@ -399,6 +399,16 @@ label {
     color: #C5D1D9;
 }
 
+.uniqueGameGenre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #020659;
+    border: #707070 solid 2px;
+    color: #C5D1D9;
+}
+
 #apiImage {
     width: 50%;
     height: auto;
@@ -416,6 +426,8 @@ label {
     align-items: center;
     margin: auto;
     width: 50%;
+    height: auto;
+    font-size: 1.5em;
 }
 
 #apiPurchase {
