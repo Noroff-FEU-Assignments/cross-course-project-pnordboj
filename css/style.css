@@ -227,6 +227,7 @@ body {
     border: solid 1px #707070;
     color: white;
     width: 100%;
+    margin-top: 4%;
 }
 
 #view_game, #view_game_works {
