@@ -222,7 +222,7 @@ body {
     gap: 5%;
 }
 
-.gameListButton {
+.allGames {
     display: flex;
     flex-direction: row;
     justify-content: center;
