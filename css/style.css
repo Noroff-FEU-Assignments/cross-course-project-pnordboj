@@ -393,6 +393,7 @@ label {
 
 .uniqueGame {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #C5D1D9;
@@ -403,6 +404,8 @@ label {
 }
 
 #apiRelease {
+    border: #707070 solid 3px;
+    border-radius: 50%;
     background-color: #020659;
     font-size: 1.3em;
 }
