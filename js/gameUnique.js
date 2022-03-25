@@ -10,6 +10,7 @@ async function apiGame() {
         try {
                 const fetchApi = await fetch(url);
                 const games = await fetchApi.json();
+                console.log(games);
                 html.innerHTML = '';
                 document.title = `${games.name}`;
                 document.getElementsByTagName('meta')["description"].content = `${games.description}`;
