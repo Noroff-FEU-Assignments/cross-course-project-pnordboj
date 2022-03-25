@@ -21,7 +21,7 @@ async function apiGame() {
                 </div>`;
                 const gameGenre = games.genres;
                 for(let i = 0; i < gameGenre.length; i++) {
-                        html.innerHTML += `<div class="uniqueGame">
+                        html.innerHTML += `<div class="uniqueGameGenre">
                         <label id="genreApi">${gameGenre[i].name}</label>
                         </div>`;       
                 }
