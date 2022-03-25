@@ -7,8 +7,7 @@ const url = 'https://api.rawg.io/api/games/' + id + '?key=fc28d25bb9a8458487040d
 
 async function apiGame() {
         const fetchApi = await fetch(url);
-        const callApi = await fetchApi.json();
-        const games = callApi.results;
+        const games = await fetchApi.json();
         console.log(games);
         html.innerHTML = '';
         document.title = `${games.name}`;
