@@ -416,10 +416,17 @@ label {
     align-items: center;
     margin: auto;
     width: 50%;
+}
+
+#apiPurchase {
     background-color: #020659;
     border: solid 1px #707070;
     border-radius: 20%;
     color: white;
+}
+
+#apiPurchase:hover {
+    background-color: #707070;
 }
 
 .addContainer:hover {
