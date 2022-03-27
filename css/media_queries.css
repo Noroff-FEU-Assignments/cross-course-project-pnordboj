@@ -1,15 +1,15 @@
 /* For Mobile Phones, example: All iPhones according too Firefox Developer Edition */
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
     #logo_img {
-        width: 390px;
+        width: 100%;
     }
 
     nav {
         justify-content: center;
         gap: auto;
-        width: 375px;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -53,17 +53,15 @@
         flex-direction: column;
     }
 
+    .game_container_2 {
+        margin-top: 5%;
+    }
+
     #copyright {
         width: 150px;
     }
 
 /* List.html */
-    
-    .list_page {
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
     .game_list {
         margin-left: auto;
@@ -72,87 +70,37 @@
         padding: auto;
     }
 
-    #game_box_list {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #view_game_works, #view_game {
-        height: fit-content;
-        width: 140px;
-        margin: 0 auto;
-    }
-
-    .search {
-        width: 300px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #search_button {
-        margin: auto;
-        width: auto;
-    }
-    
-    #search_button > h5 {
-        margin: 5px;
-    }
-    
-    #search_box {
+    .game-api {
+        width: 100%;
         text-align: center;
-        width: 200px;
-        margin-left: auto;
-        margin-right: auto;
     }
-    
-    /* Tags */
-    
-    .tags {
-        display: flex;
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
-        width: 300px;
+
+    #view_game {
+        height: auto;
     }
-    
-    .action, .adventure, .puzzle, .sim, .horror, .rpg {
-        gap: 10px;
-        margin-top: auto;
-        margin-bottom: 10px;
-        margin-left: 10px;
+
+    .search_tags {
+        display: none;
     }
 
 /* game.html */
 
-    .game_page {
-        align-items: center;
-        color: white;
+    .uniqueGame {
+        width: 100%;
+        text-align: center;
     }
 
-    .game_page > img {
+    #apiImage {
+        width: 90%;
+    }
+
+    #genreApi {
+        text-align: center;
+        width: 30%;
+    }
+
+    .purchaseButton {
         width: 80%;
-    }
-
-    .game_page > h1 {
-        font-size: 27px;
-    }
-
-    .game_page > label {
-        font-size: 14px;
-    }
-
-    /* Description */
-
-    .description {
-        font-size: 16px;
-    }
-
-    .tags_description {
-        flex-direction: column;
-        width: 300px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 1%;
     }
 
 /* checkout.html */
@@ -171,37 +119,6 @@
         flex-direction: row;
         margin-left: auto;
         margin-right: auto;
-        width: 300px;
-        height: 90px;
-    }
-    
-    #stray_img {
-        width: 150px;
-        height: 90px;
-    }
-
-    .cart > p {
-        width: 50px;
-        margin: 0 auto;
-        font-size: 10px;
-    }
-
-    .total {
-        flex-direction: column;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        line-height: 2px;
-        width: 90px;
-    }
-    
-    .total > label {
-        font-size: 14px;
-        justify-content: center;
-    }
-    
-    .total > h3 {
-        font-size: 18px;
     }
 
     .payment_method {
@@ -222,12 +139,8 @@
         height: 15px;
     }
     
-    #visa, #mastercard {
-        width: 50px;
-    }
-    
-    #paypal {
-        width: 55px;
+    #visa, #mastercard, #paypal {
+        width: 16%;
     }
 
     #complete {
@@ -244,18 +157,17 @@
 /* Edit Profile */
 
     .profile_nav {
-        gap: 10px;
         margin-top: 5%;
     }
     
-    #view_games, #sell_games, #edit_profile, #wishlist, #logout {
-        width: fit-content;
-        height: 50px;
-        font-size: 10px;
+    #editButton {
+        width: 100%;
+        font-size: 15px;
     }
 
     .edit_profile {
-        margin: 30px auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 
     .edit_profile > h1 {
@@ -282,9 +194,15 @@
 
 /* Contact Page */
 
+    .contact_page > p {
+        font-size: 18px;
+    }
+
     #select_topic {
         font-size: 16px;
     }
+
+
 
 }
 
@@ -319,10 +237,13 @@
 
 /* game.html */
     
-    .tags_description {
-        width: 400px;
-        margin-left: auto;
-        margin-right: auto;
+    #apiImage {
+        width: 60%;
+    }
+
+    #genreApi {
+        text-align: center;
+        width: 30%;
     }
 
 /* checkout.html */
