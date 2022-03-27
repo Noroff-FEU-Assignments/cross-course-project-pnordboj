@@ -62,25 +62,7 @@ body {
 	background-color: #1D2540;
 }
 
-/* Main Page */
-
-/* Categories */
-
-.categories {
-	display: flex;
-	margin: 15px auto 15px auto;
-	padding: 0 15px 0 15px;
-	gap: 100px;
-	background-color: #020659;
-	border: solid 1px #C5D1D9;
-	border-radius: 35px;
-	font-family: "Montserrat", "sans-serif";
-	color: white;
-	font-size: 20px;
-	width: fit-content;
-}
-
-/* Games */
+/* Home Page */
 
 .games {
 	display: flex;
@@ -94,6 +76,7 @@ body {
 
 .game_container_1 {
 	display: flex;
+    margin-top: 5%;
 	gap: 26px;
 }
 
