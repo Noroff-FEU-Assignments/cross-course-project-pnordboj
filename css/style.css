@@ -83,26 +83,20 @@ body {
 .game_container_2 {
 	display: flex;
 	gap: 26px;
+    margin-left: 6%;
 }
-
-/* Game Borders */
 
 #game_box {
 	border: solid #C5D1D9;
 	border-radius: 26px;
 }
 
-/* List Game and Signup */
-
-
-/* List Page */
-
 .list_page {
     display: flex;
     justify-content: center;
 }
 
-/* Games */
+/* List of Games */
 
 .game_list {
     display: flex;
@@ -279,8 +273,6 @@ label {
 }
 
 /* Games */
-
-/* Game Page */
 
 .uniqueGame {
     display: flex;
