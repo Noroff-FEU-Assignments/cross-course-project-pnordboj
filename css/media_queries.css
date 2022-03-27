@@ -246,41 +246,7 @@
         width: 30%;
     }
 
-/* checkout.html */
-
-    .cart {
-        margin-left: auto;
-        margin-right: auto;
-        width: 700px;
-        height: 200px;
-    }
-    
-    .cart > p {
-        width: 19%;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 8%;
-    }
-    
-    .total {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10%;
-        line-height: 2px;
-    }
-    
-    .total > label {
-        font-size: 24px;
-    }
-    
-    .total > h3 {
-        font-size: 38px;
-    }
-
 /* edit.html */
-
-/* success.html */
 
     .page > h1 {
         font-size: auto;
@@ -292,7 +258,7 @@
         gap: auto;
     }
 
-    #view_games, #sell_games, #edit_profile, #wishlist, #logout {
+    #editButton {
         width: auto;
         height: auto;
     }
@@ -312,27 +278,6 @@
 /* Laptop */
 
 @media only screen and (min-width: 1200px) {
-
-    #logo_img {
-        width: auto;
-    }
-
-    .categories {
-        width: fit-content;
-        border-radius: 35px;
-        font-size: 20px;
-        gap: 100px;
-    }
-
-    #profile_icon {
-	    width: 55px;
-	    height: 50px;
-    }
-
-    #home_icon, #search_icon, #cart_icon, #question_icon {
-	    width: 60px;
-	    height: 60px;
-    }
 }
 
 /* For Desktop */
@@ -346,12 +291,4 @@
 /* Bigger Monitors */
 
 @media only screen and (min-width: 2000px) {
-
-    .edit_profile {
-        margin: 30px auto;
-    }
-
-    .profile_settings {
-        margin: 0 auto;
-    }
 }
