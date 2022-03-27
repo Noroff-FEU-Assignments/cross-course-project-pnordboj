@@ -408,6 +408,13 @@ label {
     flex-direction: row;
 }
 
+#loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
 #genreApi {
     background-color: #020659;
     border: #707070 solid 2px;
@@ -434,15 +441,16 @@ label {
     justify-content: center;
     align-items: center;
     margin: auto;
+    width: 28%;
 }
 
 #apiPurchase {
     background-color: #020659;
     border: solid 1px #707070;
-    width: 30%;
     height: 100px;
     color: #C5D1D9;
     font-size: 1.5em;
+    cursor: pointer;
 }
 
 #apiPurchase:hover {
@@ -455,7 +463,6 @@ label {
 
 /* Edit Page */
 
-/* Profile Navigation */
 .profile_nav {
     display: flex;
     flex-direction: row;
@@ -478,8 +485,6 @@ label {
 #edit_profile {
     color: gray;
 }
-
-/* Edit Profile */
 
 .edit_profile {
     display: flex;
@@ -512,8 +517,6 @@ label {
     border: #020659 solix 1px;
 }
 
-/* Profile Settings */
-
 .profile_settings {
     display: flex;
     align-items: center;
@@ -543,7 +546,6 @@ label {
 
 /* Checkout */
 
-/* Checkout Page */
 .h1_text {
     display: flex;
     flex-direction: column;
@@ -562,42 +564,21 @@ label {
     font-size: 38px;
 }
 
-/* Cart */
 .cart {
     display: flex;
-    flex-direction: row;
-    background-color: #020659;
-    border: solid 1px #707070;
-    color: white;
-    margin-left: 30%;
-    width: 40%;
-    height: 200px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
-.cart > p {
-    width: 19%;
-    text-align: center;
-    margin-left: 5%;
-    margin-top: 8%;
+#cartImage {
+    width: 60%;
+    height: auto;
+	border: solid #C5D1D9;
+	border-radius: 26px;
 }
 
-.total {
-    flex-direction: column;
-    text-align: center;
-    margin-left: 10%;
-    margin-top: 10%;
-    line-height: 2px;
-}
-
-.total > label {
-    font-size: 24px;
-}
-
-.total > h3 {
-    font-size: 38px;
-}
-
-/* Payment Method */
 .payment_method {
     display: flex;
     flex-direction: column;
@@ -633,8 +614,6 @@ label {
     background-color: #707070;
     border-radius: 25px;
 }
-
-/* Complete Purchase */
 
 .complete {
     display: flex;

@@ -54,6 +54,7 @@
 		<h2>Games added to cart</h2>
 	  </section>
 	  <section class="cart">
+			<img id="loading" alt="Loading..." src="../images/loading.gif">
 		<!--
 		<img id="stray_img" src="../images/logo-stray.png">
 		<p id="cart_text">This is a Pre-Order
@@ -63,18 +64,18 @@
 			<label for="Total">Total:</label>
 			<h3 id="Total">$ 59.99</h3>
 		</div>
-	  </section>
 	  -->
+	  </section>
 	  <selection class="payment_method">
 		<h2>Select your payment method</h2>
-		<div class="select_payment">
-			<input id="checkbox" type="radio">
-			<img id="mastercard" src="../images/2560px-MasterCard_Logo.svg.png">
-			<input id="checkbox" type="radio">
-			<img id="visa" src="../images/Visa-Logo.png">
-			<input id="checkbox" type="radio">
-			<img id="paypal" src="../images/paypal.png">
-		</div>
+		<form class="select_payment">
+			<input id="checkbox" type="radio" name="payment">
+			<img id="mastercard" src="../images/2560px-MasterCard_Logo.svg.png" alt="mastercard">
+			<input id="checkbox" type="radio" name="payment">
+			<img id="visa" src="../images/Visa-Logo.png" alt="visa">
+			<input id="checkbox" type="radio" name="payment">
+			<img id="paypal" src="../images/paypal.png" alt="paypal">
+		</form>
 	  </selection>
 	  <div class="complete">
 	  </div>

@@ -2,11 +2,10 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-const html = document.querySelector(".cart");
-const button = document.querySelector(".complete");
+const html = document.querySelector(".apiSuccess");
 const url = 'https://api.rawg.io/api/games/' + id + '?key=fc28d25bb9a8458487040dc95d300dff';
 
-async function apiCart() {
+async function apiSuccess() {
         try {
                 const fetchApi = await fetch(url);
                 const games = await fetchApi.json();
@@ -20,7 +19,7 @@ async function apiCart() {
                 <img src="${games.background_image}" alt="${games.name}" id="cartImage">
                 </div>`;
                 button.innerHTML += `
-                <a href="success.html?id=${games.id}">
+                <a href="success.html?${games.id}">
 			        <button id="complete">
 				        Complete Purchase
 			        </button>
@@ -31,4 +30,4 @@ async function apiCart() {
                 html.innerHTML = displayError(error, 'An error has occured!');
         }
 }
-apiCart();
+apiSuccess();
