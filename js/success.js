@@ -9,10 +9,8 @@ async function apiSuccess() {
         try {
                 const fetchApi = await fetch(url);
                 const games = await fetchApi.json();
-                console.log(games);
                 html.innerHTML = '';
                 document.title = `${games.name}`;
-                console.log(games);
                 html.innerHTML += `
                 <div class="uniqueGame">
                 <h2 id="apiH2">${games.name}</h2>

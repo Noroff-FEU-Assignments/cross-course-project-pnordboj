@@ -10,10 +10,8 @@ async function getTopGames() {
         const fetchApi = await fetch(url);
         const callApi = await fetchApi.json();
         const games = callApi.results;
-        console.log(games);
         html.innerHTML = ``;
         for(let i = 0; i < games.length; i++) {
-            console.log(games[i]);
             html.innerHTML += `
                 <div class="game-api">
                     <a href="../html/api.html?id=${games[i].id}">
