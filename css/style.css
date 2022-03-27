@@ -83,7 +83,6 @@ body {
 .game_container_2 {
 	display: flex;
 	gap: 26px;
-    margin-left: 6%;
 }
 
 #game_box {
@@ -397,7 +396,7 @@ label {
     background-color: #C5D1D9;
     border-radius: 25px;
     color: #020659;
-    border: #020659 solix 1px;
+    border: #020659 solid 1px;
 }
 
 .profile_settings {

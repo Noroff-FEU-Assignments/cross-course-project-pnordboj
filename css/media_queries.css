@@ -53,22 +53,6 @@
         flex-direction: column;
     }
 
-    .signup_listgame {
-        flex-direction: column;
-    }
-
-    .home_listgame {
-        width: 365px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .signup {
-        width: 365px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     #copyright {
         width: 150px;
     }
@@ -325,18 +309,6 @@
 
     .game_container_1, .game_container_2 {
         flex-direction: row;
-    }
-
-    .signup_listgame {
-        flex-direction: row;
-    }
-
-    .home_listgame {
-        width: 375px;
-    }
-
-    .signup {
-        width: auto;
     }
 
 /* list.html */
