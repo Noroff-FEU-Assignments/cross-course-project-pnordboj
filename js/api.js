@@ -2,14 +2,13 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-const url = "https://api.rawg.io/api/games?ordering=-metacritic&key=fc28d25bb9a8458487040dc95d300dff";
+const url = "https://patricknj.one/wp-json/wc/v3/products?consumer_key=ck_407e102a399e8bfb1e6131bc91b5bb418e515b84&consumer_secret=cs_3f458ce92af6ffff564f5b472040984ba45601c4";
 const html = document.querySelector(".game_list");
 
 async function getTopGames() {
     try {
         const fetchApi = await fetch(url);
-        const callApi = await fetchApi.json();
-        const games = callApi.results;
+        const games = await fetchApi.json();
         html.innerHTML = ``;
         for(let i = 0; i < games.length; i++) {
             html.innerHTML += `
@@ -18,11 +17,8 @@ async function getTopGames() {
                     <h2 id="apiTitle">${games[i].name}</h2>
                     </a>
                     <a href="../html/api.html?id=${games[i].id}" id="imageLink">
-                        <img id="apiImage" alt="${games[i].name}(Missing Image)" src="${games[i].background_image}">
+                        <img id="cartImage" alt="${games[i].name}(Missing Image)" src="${games[i].images[0].src}">
                     </a>
-                        <label id="apiRating">Metacritic Score: ${games[i].metacritic}</label>
-                        <label id="apiReleaseTop">Released: ${games[i].released}</label>
-                    
                     <a href="../html/api.html?id=${games[i].id}">
                         <button id="view_game">
                             <h4>View Game</h4>

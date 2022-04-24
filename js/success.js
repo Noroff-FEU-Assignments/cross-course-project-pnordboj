@@ -3,7 +3,7 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
 const html = document.querySelector(".apiSuccess");
-const url = 'https://api.rawg.io/api/games/' + id + '?key=fc28d25bb9a8458487040dc95d300dff';
+const url = 'https://patricknj.one/wp-json/wc/v3/products' + '/' + id + '?consumer_key=ck_407e102a399e8bfb1e6131bc91b5bb418e515b84&consumer_secret=cs_3f458ce92af6ffff564f5b472040984ba45601c4';
 
 async function apiSuccess() {
         try {
@@ -14,7 +14,7 @@ async function apiSuccess() {
                 html.innerHTML += `
                 <div class="uniqueGame">
                 <h2 id="apiH2">${games.name}</h2>
-                <img src="${games.background_image}" alt="${games.name}" id="cartImage">
+                <img src="${games.images[0].src}" alt="${games.name}" id="cartImage">
                 </div>`;
                 button.innerHTML += `
                 <a href="success.html?${games.id}">
