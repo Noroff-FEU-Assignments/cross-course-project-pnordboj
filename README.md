@@ -1,6 +1,6 @@
 # GameHub
 
-![image](https://raw.githubusercontent.com/Noroff-FEU-Assignments/cross-course-project-pnordboj/main/images/GameHub_Logo.png?token=GHSAT0AAAAAABS2U4RAIJQ5U6FGWKNCVOYEYUVZCVA)
+![image](https://raw.githubusercontent.com/Noroff-FEU-Assignments/cross-course-project-pnordboj/main/images/GameHub_Logo.png?)
 
 A store page for games, with an smooth mobile first design.
 
